@@ -26,8 +26,15 @@ Genshin Impact Dataset of 50 Weapons.
 6. Weapon Type - Type of the weapon
 
 #### Setup
+        
+        create database from command line
+        >>> sqllite3 genshin-data.db < genshin-db.schema
 
-        TBA
+        import the csv file
+        sqllite3 genshin-data.db
+        .mode csv
+        .import data/character_data.csv characters
+        .import data/weapon_data.csv weapons
 
 #### UML Class Diagram
 [UML](../../wiki/uml-class-diagram)
