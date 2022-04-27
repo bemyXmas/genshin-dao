@@ -4,19 +4,19 @@ Genshin Impact is an action role-playing game developed by Chinese company miHoY
 Genshin Impact Dataset of 50 Characters.
 
 ## Genshin_Characters_data table
-| No. | Character's Name | Stars | Used Weapon Type|
+| id | Character's Name | Stars | Weapon Type|
 |--------------|---------|---------------|---------|
 
-1. No. - The increment number of the characters
+1. id - The increment number of the characters
 2. Character's Name - Character's Name in game
 3. Stars - The rareness of the character
-4. Used Weapon Type - The type of weapon that characters used
+4. Weapon Type - The type of weapon that characters used
 
 ## Genshin_Weapons_data table
-| No. | Weapon's Name | Main Stats | Sub Stats | Stars | Weapon Type |
+| id | Weapon's Name | Main Stats | Sub Stats | Stars | Weapon Type |
 |---------|-------------|------------|-------------|-------------|-------------|
 
-1. No. - The increment number of the weapons
+1. id - The increment number of the weapons
 2. Weapon's Name - Weapon's Name in game
 3. Main Stats - Main Stats of the weapon
 4. Sub Stats - Sub Stats of the weapon
