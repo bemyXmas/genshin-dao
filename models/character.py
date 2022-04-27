@@ -4,7 +4,7 @@ from sqlalchemy.orm import declarative_base
 Base = declarative_base()
 
 class Character(Base):
-    __tablename__ = "character"
+    __tablename__ = "characters"
     id = Column(Integer, primary_key=True)
     characters_name = Column(Text(30))
     stars = Column(Text)

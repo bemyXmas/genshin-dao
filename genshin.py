@@ -7,9 +7,17 @@ class Genshin:
 
     character_dao = None
     weapon_dao = None
+    __instance = None
+
+    @staticmethod
+    def get_instance():
+        """Static method access"""
+        if Genshin.__instance is None:
+            Genshin.__instance = Genshin()
+        return Genshin.__instance
 
     def __init__(self, connection_url="sqlite:///genshin-data.db"):
-        engine = create_engine(connection_url)
+        engine = create_engine(connection_url, echo=True)
         Session = sessionmaker(bind=engine)
         self.__db_session = Session()
     

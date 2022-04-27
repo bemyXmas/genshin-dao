@@ -1,5 +1,6 @@
 from sqlalchemy.orm import Session
-from models.model_weapon import Weapon
+from models.weapon import Weapon
+
 
 class WeaponDao:
     """DAO for weapon model."""
@@ -14,7 +15,7 @@ class WeaponDao:
     def get_weapon_by_id(self, id):
         """Get weapon by id."""
         try:
-            return self.__session.query(Weapon).filter_by(id=id)
+            return self.__session.query(Weapon).filter_by(id=id).first()
         except:
             print("There is no weapon with id" + id)
     

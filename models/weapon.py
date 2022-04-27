@@ -4,7 +4,7 @@ from sqlalchemy.orm import declarative_base
 Base = declarative_base()
 
 class Weapon(Base):
-    __tablename__ = "weapon"
+    __tablename__ = "weapons"
     id = Column(Integer, primary_key=True)
     weapons_name = Column(Text(30))
     main_stat = Column(Text)

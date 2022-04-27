@@ -12,6 +12,8 @@ Genshin Impact Dataset of 50 Characters.
 3. Stars - The rareness of the character
 4. Weapon Type - The type of weapon that characters used
 
+Genshin Impact Dataset of 50 Weapons.
+
 ## Genshin_Weapons_data table
 | id | Weapon's Name | Main Stats | Sub Stats | Stars | Weapon Type |
 |---------|-------------|------------|-------------|-------------|-------------|

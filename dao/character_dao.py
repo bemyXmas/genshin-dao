@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from models.model_character import Character
+from models.character import Character
 
 class CharacterDao:
     """DAO for character model."""
@@ -14,7 +14,7 @@ class CharacterDao:
     def get_character_by_id(self, id):
         """Get character by id."""
         try:
-            return self.__session.query(Character).filter_by(id=id)
+            return self.__session.query(Character).filter_by(id=id).first()
         except:
             print("There is no character with id" + id)
     
