@@ -31,7 +31,7 @@ Genshin Impact Dataset of 50 Weapons.
         >>> sqllite3 genshin-data.db < genshin-db.schema
 
         import the csv file
-        sqllite3 genshin-data.db
+        >>> sqllite3 genshin-data.db
         .mode csv
         .import data/character_data.csv characters
         .import data/weapon_data.csv weapons
