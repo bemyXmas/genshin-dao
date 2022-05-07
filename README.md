@@ -41,3 +41,6 @@ Genshin Impact Dataset of 50 Weapons.
 
 #### Package Diagram
 [Package Diagram](../../wiki/package-diagram)
+
+#### Web Service API
+[Web Service API](../../wiki/web-service-API)
